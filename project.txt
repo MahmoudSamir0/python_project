@@ -1,3 +1,4 @@
 owner:title:Details:total:sdate:edate
 walid:iti:devops:50000EGP:2022-05-05:2026-02-02
 mahmoud:devops:iti:600000EGP:2021-06-06:2025-08-08
+hh:cloud:mansoura:70000EGP:2022-02-01:2023-04-05
