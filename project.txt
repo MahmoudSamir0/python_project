@@ -1,6 +1,3 @@
 owner:title:Details:total:sdate:edate
-hh:fgf:fgf:400000:2015-05-05:2025-05-02
-hh:cloud:yyy:60000EGP:2015-04-03:2025-05-05
-mahmoud:sql:aws:20000EGP:2015-04-01:2025-05-20
-hh:error:aws:20000EGP:2015-04-05:2025-05-07
-mahmoud:sql:aws:20000EGP:2015-04-01:2025-05-20
+walid:iti:devops:50000EGP:2022-05-05:2026-02-02
+mahmoud:devops:iti:600000EGP:2021-06-06:2025-08-08
