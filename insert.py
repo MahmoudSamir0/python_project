@@ -31,9 +31,9 @@ import datetime
 
 def startdate():
  while True:
-    day=input("enter start day ")
-    month=input("enter start month ")
-    year=input("enter start year ")
+    day=input("enter start day of the project (number) ")
+    month=input("enter start month of the project (number) ")
+    year=input("enter start year of the project")
     if day.isdigit() == False and month.isdigit() == False and year.isdigit() == False:
         continue
     else:
@@ -46,9 +46,9 @@ def startdate():
 
 def enddate():
  while True:
-    da=input("enter end day ")
-    mont=input("enter end month ")
-    yea=input("enter end year ")
+    da=input("enter end day of the project (number) ")
+    mont=input("enter end month of the project (number) ")
+    yea=input("enter end year of the project")
     if da.isdigit() == False and mont.isdigit() == False and yea.isdigit() == False:
         continue
     else:
