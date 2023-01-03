@@ -167,7 +167,7 @@ while True:
                                     else:
                                         print("enter correct input ")
                                 elif m == 4:
-                                    #delete project
+                                    #delete projects
                                     print("enter the start date of the project you want to delete ")
                                     from insert import startdate
                                     gip = startdate()
