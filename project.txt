@@ -1,0 +1,8 @@
+owner:title:Details:total:sdate:edate
+hh:sql:aws:20000EGP:2015-04-01:2025-05-30
+hh:aws:aws:20000EGP:2015-04-02:2025-05-02
+hh:sql:aws:20000EGP:2015-04-03:2025-05-05
+mahmoud:sql:aws:20000EGP:2015-04-01:2025-05-20
+hh:sql:aws:20000EGP:2015-04-04:2025-05-06
+hh:sql:aws:20000EGP:2015-04-05:2025-05-07
+mahmoud:sql:aws:20000EGP:2015-04-01:2025-05-20
