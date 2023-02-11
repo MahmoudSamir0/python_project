@@ -2,3 +2,5 @@ sonar.projectKey={{rebo_name}}
 sonar.projectName={{rebo_name}}
 sonar.sourcesEncoding=UTF-8
 sonar.sources=.
+
+sonar.coverage.exclusions=project.py,lab3.py
