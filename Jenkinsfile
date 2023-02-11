@@ -1,7 +1,5 @@
 pipeline{
-    agent{
-        label "Agent slave"
-    }
+    agent { label 'jenkins-agent' }
     stages{
         stage("sonarqube"){
             steps{
