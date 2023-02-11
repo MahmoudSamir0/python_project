@@ -7,7 +7,7 @@ pipeline{
             steps{
             }
             script{
-            def pipelineconfig[
+            def pipelineconfig=[
                 sonarQubeServer:'sonarqube-connection',
             ]
             def repositoryUrl()=scm.userRemoteconfigs[0].getUrl()
