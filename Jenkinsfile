@@ -13,8 +13,8 @@ pipeline{
             def scannerHome = tool 'sonarqube-global'
             def SONAR_BRANCH_NAME = env.BRANCH_NAME
             withSonarQubeEnv('sonarqube-connection') {
-                sh "sed -i s#{{repo_name}}#${GIT_REPO_NAME}# sonar-project.proberties"
-                sh "sed -i s#{{branch_name}}#${SONAR_BRANCH_NAME}# sonar-project.proberties"
+                sh "sed -i #${{repo_name}}#${GIT_REPO_NAME}# sonar-project.proberties"
+                sh "sed -i #${{branch_name}}#${SONAR_BRANCH_NAME}# sonar-project.proberties"
                 sh "${scannerHome}/bin/sonar-scanner -Dsonar.projectVersion=${SONAR_BRANCH_NAME} -Dsonar.buildString=Jenkins-${SONAR_BRANCH_NAME}BLD${env.BUILD_NUMBER}"
             }
         }
