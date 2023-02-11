@@ -5,7 +5,7 @@ pipeline{
     stages{
         stage("sonarqube"){
             steps{
-            }
+            
             script{
             def pipelineconfig=[
                 sonarQubeServer:'sonarqube-connection',
@@ -17,9 +17,10 @@ pipeline{
             withSonarQubeEnv('sonarqube-connection') {
                 sh "sed -i s#{{repo_name}}s#{GIT_REPO_NAME}# sonar-project.proberties"
                 sh "sed -i s#{{baranch_name}}s#{SONAR_BARANCH_NAME}# sonar-project.proberties"
-sh "${scannerHome}/bin/sonar-scanner -Dsonar.projectVersion=${SONAR_BARANCH_NAME} -Dsonar.buildString=Jenkins-${SONAR_BARANCH_NAME}BLD${env.BUILD_NUMBER}"
+                sh "${scannerHome}/bin/sonar-scanner -Dsonar.projectVersion=${SONAR_BARANCH_NAME} -Dsonar.buildString=Jenkins-${SONAR_BARANCH_NAME}BLD${env.BUILD_NUMBER}"
             }
         }
     }
+}
 }
 }
