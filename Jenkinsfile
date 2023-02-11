@@ -8,8 +8,8 @@ pipeline{
             def pipelineconfig=[
                 sonarQubeServer:'sonarqube-connection',
             ]
-            def repositoryUrl = scm.userRemoteconfigs[0].getUrl()
-            def GIT_REPO_NAME = scm.userRemoteconfigs[0].getUrl().tokenize.last().split("\\")[0]
+            def repositoryUrl = scm.userRemoteConfigs[0].getUrl()
+            def GIT_REPO_NAME = scm.userRemoteConfigs[0].getUrl().tokenize.last('/').split("\\.")[0]
             def scannerHome = tool 'sonarqube-global'
             def SONAR_BRANCH_NAME = env.BRANCH_NAME
             withSonarQubeEnv('sonarqube-connection') {
